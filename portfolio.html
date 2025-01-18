@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amy's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        body{
+            font-family: 'Caveat';
+            line-height: 1.5;
+            background-color: #a1b2b1;
+            color : black;
+            margin: 20px;
+         
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+           
+            font-size: 3.5rem;
+            text-align: center;
+        }
+        .Container{
+            display: flex;
+            
+        }
+
+        .Container img{
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+
+
+        }
+        .text-Container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text-Container p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: small;
+            text-align: center;
+            margin-left: 20px;
+            
+
+        }
+        
+    </style>
+
+
+
+</head>
+
+<body>
+    
+    <h1>Take a peak at Amy's Portfolio</h1>
+    <div class = "Container">
+        <img id = "MyPic" src="portfolio.jpeg" alt="A description of the image" width="250">
+
+
+        <div class="text-Container">
+            <p>
+                I’m a 19-year-old student at the University of Ottawa, currently in my third year of studying 
+                Mechanical Engineering and Computer Technology. I’ve always been passionate about understanding how things work 
+                and finding creative ways to solve problems, whether it’s designing a project from scratch or figuring out the 
+                best approach to a challenging equation.
+            </p>
+            <p>
+                What truly excites me is the process of turning ideas into reality. Whether I’m working on a SolidWorks model, 
+                coding a program, or analyzing systems, I find joy in combining technical skills with curiosity and determination. 
+                Beyond academics, I’m someone who loves to explore innovation and sustainability, always seeking ways to make a 
+                positive impact through my work.
+            </p>
+            <p>
+                When I’m not studying or creating, you might find me learning new tools, collaborating with teammates, or tackling 
+                hands-on projects that push my skills further. To me, engineering isn’t just about solving problems—it’s about 
+                building a better, smarter future.
+            </p>
+            <p>
+                Thank you for taking the time to learn about me! I look forward to sharing my journey and connecting with others 
+                who are as passionate about technology and design as I am.
+            </p>
+        </div>
+    </div>
+    
+    <model-viewer src="pompe-centrifuge.glb" alt="A 3D model"
+    auto-rotate camera-controls ar shadow-intensity="1"></model-viewer>
+
+    
+</body>
+</html>
