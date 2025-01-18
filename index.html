@@ -42,24 +42,35 @@
 
         .text-Container p{
             font-family: 'Montserrat', sans-serif;
-            font-size: small;
+            font-size: medium;
             text-align: center;
             margin-left: 20px;
             
             
 
         }
-        .centrifugal-pump{
+        .Projects .centrifugal-pump{
+            display : flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-items: center;
+            width: 30%;
+        }
+
+        .Projects .centrifugal-pump p{
+            font-family: 'Montserrat', sans sérif;
+            font-size : small;
+            text-align: center;
+        }
+
+
+        .Projects .centrifugal-pump model-viewer{
             width: 500px;
             height: 300px;
             background-color: #421212;
             border: 1px solid #ccc;
-        
-
-
-
-  
         }
+
 
     </style>
 
@@ -101,10 +112,17 @@
     
     <div class = "Projects">
         <div class = "centrifugal-pump">
+            <p>
+                3D model of a Centrifugal pump designed with SolidWorks inspired
+                by Hydroo Centrifugal Pump model SZ080701
+            </p>
+            
             <model-viewer src="pompe-centrifuge.glb" alt="A 3D model"
             auto-rotate camera-controls ar shadow-intensity="1"></model-viewer>
             
-            <p></p>    
+            <p>
+                Inspo : 
+            </p>    
         </div>
     </div>
 
