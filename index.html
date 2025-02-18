@@ -49,16 +49,28 @@
             
 
         }
+        .Projects {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            flex-direction: column;        
+        }
         .Projects .centrifugal-pump{
             display : flex;
             flex-direction: column;
             align-items: flex-start;
             align-items: center;
             width: 30%;
+            
+        }
+        .Projects .centrifugal-pump h2{
+            font-family: 'Montserrat', sans-sérif;
+            font-style: bold;
+            text-align: center;
         }
 
         .Projects .centrifugal-pump p{
-            font-family: 'Montserrat', sans sérif;
+            font-family: 'Montserrat', sans-sérif;
             font-size : small;
             text-align: center;
         }
@@ -112,16 +124,17 @@
     
     <div class = "Projects">
         <div class = "centrifugal-pump">
+            <h2>
+                School Projects
+            </h2>
             <p>
                 3D model of a Centrifugal pump designed with SolidWorks inspired
                 by Hydroo Centrifugal Pump model SZ080701
             </p>
             
             <model-viewer src="pompe-centrifuge.glb" alt="A 3D model"
-            auto-rotate camera-controls ar shadow-intensity="1"></model-viewer>
-            
+            auto-rotate camera-controls ar shadow-intensity="1"></model-viewer>   
             <p>
-
                 <a href="https://github.com/aminataaliou/PortfolioWebsite/blob/main/Inspiration%20pour%20projet%20final.pdf" target="_blank">Inspo</a>
             </p>    
         </div>
